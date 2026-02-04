@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusOS | The Future of Education Management</title>
+    <title>CampusOS | The Operating System for High-Performance Institutions</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -20,15 +20,21 @@
                 <i data-lucide="graduation-cap"></i>
                 <span>CampusOS</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#analytics">Analytics</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="http://localhost:5173/login" class="btn btn-outline"
-                        style="padding: 0.5rem 1.5rem; border-radius: 0.75rem;">Login</a></li>
-                <li><a href="http://localhost:5173/signup" class="btn btn-primary"
-                        style="padding: 0.5rem 1.5rem; border-radius: 0.75rem;">Get Started</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#features">Platform</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#testimonials">Stories</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="http://localhost:5173/login" class="nav-link-login">Login</a>
+                    <a href="http://localhost:5173/signup" class="btn btn-primary btn-sm">Get Started</a>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i data-lucide="menu"></i>
+            </button>
         </div>
     </nav>
 
@@ -36,166 +42,240 @@
     <section class="hero">
         <div class="container hero-grid">
             <div class="hero-content">
-                <span class="badge">
-                    <i data-lucide="sparkles" size="14" style="margin-right: 6px;"></i>
-                    AI-Powered Excellence
-                </span>
-                <h1>Operate your campus on <span
-                        style="color: var(--primary); background: rgba(15, 118, 110, 0.1); padding: 0 0.5rem; border-radius: 1rem;">Autopilot.</span>
-                </h1>
-                <p style="margin: 1.5rem 0 2.5rem;">Abandon legacy spreadsheets. CampusOS is the all-in-one operating
-                    system designed for high-performance educational institutions. Secure, Automated, and Beautiful.</p>
-                <div
-                    style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; md:justify-content: start;">
+                <div class="hero-badge">
+                    <span class="pulse"></span>
+                    <span>New: AI Timetable Generator 2.0</span>
+                </div>
+                <h1>The Operating System for <span class="text-gradient">High-Performance</span> Campuses.</h1>
+                <p>Abandon legacy ERPs. Manage admissions, fees, academics, and parent communication in one ultra-fluid,
+                    intelligent interface.</p>
+                <div class="hero-actions">
                     <a href="http://localhost:5173/signup" class="btn btn-primary">
                         Start Free Trial <i data-lucide="arrow-right" size="18"></i>
                     </a>
-                    <a href="#features" class="btn btn-outline">
-                        View Demo
+                    <a href="#demo" class="btn btn-outline">
+                        <i data-lucide="play-circle" size="18"></i> Watch Demo
                     </a>
+                    <div class="hero-trust">
+                        <div class="avatars">
+                            <img src="https://i.pravatar.cc/100?img=1" alt="User">
+                            <img src="https://i.pravatar.cc/100?img=2" alt="User">
+                            <img src="https://i.pravatar.cc/100?img=3" alt="User">
+                        </div>
+                        <div class="trust-text">
+                            <strong>Trusted by 500+ Schools</strong>
+                            <span>4.9/5 Average Rating</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="hero-visual">
-                <img src="assets/images/hero.png" alt="CampusOS Dashboard UI">
+                <div class="glow-bg"></div>
+                <img src="assets/images/hero-dashboard.png" alt="CampusOS Dashboard UI" class="main-dashboard">
 
                 <!-- Floating Elements -->
                 <div class="floating-card fc-1 glass-card">
-                    <div
-                        style="width: 40px; height: 40px; background: #DEF7EC; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #03543F;">
-                        <i data-lucide="check" size="20"></i>
+                    <div class="icon-circle bg-green">
+                        <i data-lucide="banknote" size="20"></i>
                     </div>
                     <div>
-                        <div style="font-weight: 800; font-size: 0.9rem;">Fee Collected</div>
-                        <div style="color: var(--slate); font-size: 0.8rem;">Just now via UPI</div>
+                        <div class="fc-title">$1.2M Collected</div>
+                        <div class="fc-subtitle">+12% vs last month</div>
                     </div>
                 </div>
 
                 <div class="floating-card fc-2 glass-card">
-                    <div
-                        style="width: 40px; height: 40px; background: #E0E7FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #3730A3;">
+                    <div class="icon-circle bg-indigo">
                         <i data-lucide="users" size="20"></i>
                     </div>
                     <div>
-                        <div style="font-weight: 800; font-size: 0.9rem;">98% Attendance</div>
-                        <div style="color: var(--slate); font-size: 0.8rem;">Class 10-A Today</div>
+                        <div class="fc-title">98% Attendance</div>
+                        <div class="fc-subtitle">Class 10-A • Today</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Grid -->
-    <section id="features" class="features">
+
+
+    <!-- Features Overview -->
+    <section id="features" class="section-padding bg-white">
         <div class="container">
-            <div class="section-header">
-                <span
-                    style="color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Why
-                    CampusOS?</span>
-                <h2>Everything you need to run a world-class institution.</h2>
+            <div class="section-header text-center">
+                <span class="subtitle">Unified Platform</span>
+                <h2>Everything you need. Nothing you don't.</h2>
+                <p>We've stripped away the complexity of traditional ERPs and replaced it with intelligent automation.
+                </p>
             </div>
 
-            <div class="features-grid">
-                <div class="feature-card glass-card">
-                    <div class="icon-box">
+            <div class="features-grid-3">
+                <div class="feature-box">
+                    <div class="icon-box-lg bg-teal-light text-teal">
                         <i data-lucide="shield-check"></i>
                     </div>
-                    <h3>Admissions & Roles</h3>
-                    <p style="margin-top: 1rem; font-size: 1rem;">Secure, invite-only onboarding for Staff and Students.
-                        Role-based access ensures data privacy at every level.</p>
+                    <h3>Smart Admissions</h3>
+                    <p>Streamline enrollment with digital forms, automated document verification, and role-based
+                        onboarding workflows.</p>
+                    <a href="#" class="link-arrow">Learn more <i data-lucide="arrow-right" size="16"></i></a>
                 </div>
-
-                <div class="feature-card glass-card">
-                    <div class="icon-box">
+                <div class="feature-box">
+                    <div class="icon-box-lg bg-blue-light text-blue">
                         <i data-lucide="layout-grid"></i>
                     </div>
-                    <h3>Smart Seating</h3>
-                    <p style="margin-top: 1rem; font-size: 1rem;">Auto-generate exam seating arrangements in seconds.
-                        Drag-and-drop interface with instant hover details.</p>
+                    <h3>Automated Seating</h3>
+                    <p>Generate exam seating plans in seconds. Our algorithm optimizes room usage and prevents
+                        malpractice.</p>
+                    <a href="#" class="link-arrow">Learn more <i data-lucide="arrow-right" size="16"></i></a>
                 </div>
-
-                <div class="feature-card glass-card">
-                    <div class="icon-box">
-                        <i data-lucide="banknote"></i>
-                    </div>
-                    <h3>Fee Management</h3>
-                    <p style="margin-top: 1rem; font-size: 1rem;">Track payments, generate receipts, and identify
-                        defaulters instantly. Integrated with WhatsApp for reminders.</p>
-                </div>
-
-                <div class="feature-card glass-card">
-                    <div class="icon-box">
+                <div class="feature-box">
+                    <div class="icon-box-lg bg-purple-light text-purple">
                         <i data-lucide="library"></i>
                     </div>
                     <h3>Digital Library</h3>
-                    <p style="margin-top: 1rem; font-size: 1rem;">Manage book inventory, track issues/returns, and
-                        minimize losses with a complete digital catalog.</p>
+                    <p>A complete LMS and library management system. Track books, issue returns, and manage penalties
+                        effortlessly.</p>
+                    <a href="#" class="link-arrow">Learn more <i data-lucide="arrow-right" size="16"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Feature Split: WhatsApp -->
-    <section class="feature-row container">
-        <div class="feature-visual">
-            <img src="assets/images/whatsapp.png" alt="WhatsApp Integration"
-                style="width: 100%; border-radius: 2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-        </div>
-        <div class="feature-content">
-            <span class="badge" style="background: #DEF7EC; color: #03543F; border-color: #DEF7EC;">WhatsApp
-                Integrated</span>
-            <h2>Communicate where parents actually listen.</h2>
-            <p style="margin-top: 1.5rem;">Stop sending emails that go to spam. CampusOS integrates directly with
-                WhatsApp to keep parents in the loop, automatically.</p>
-
-            <ul class="check-list">
-                <li><i data-lucide="check-circle-2"></i> Instant Attendance Alerts</li>
-                <li><i data-lucide="check-circle-2"></i> Exam Result Notifications</li>
-                <li><i data-lucide="check-circle-2"></i> Fee Payment Reminders</li>
-                <li><i data-lucide="check-circle-2"></i> General Announcements</li>
-            </ul>
-
-            <a href="#" class="btn btn-outline">Learn more about API</a>
-        </div>
-    </section>
-
-    <!-- Feature Split: Analytics -->
-    <section id="analytics" class="feature-row container reversed">
-        <div class="feature-visual">
-            <img src="assets/images/ai.png" alt="AI Analytics"
-                style="width: 100%; border-radius: 2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-        </div>
-        <div class="feature-content">
-            <span class="badge" style="background: #EEF2FF; color: #4F46E5; border-color: #EEF2FF;">Deep
-                Analytics</span>
-            <h2>Data-driven decisions, <br> simplified.</h2>
-            <p style="margin-top: 1.5rem;">Visualize your institution's health with real-time dashboards. Track student
-                performance trends, financial growth, and operational efficiency.</p>
-
-            <ul class="check-list">
-                <li><i data-lucide="bar-chart-3"></i> Student Performance Heatmaps</li>
-                <li><i data-lucide="pie-chart"></i> Financial Revenue Streams</li>
-                <li><i data-lucide="trending-up"></i> Enrollment Growth Tracking</li>
-            </ul>
-
-            <a href="#" class="btn btn-primary">View Dashboard Demo</a>
+    <!-- Deep Dive: Seating (Zig) -->
+    <section class="section-padding">
+        <div class="container feature-row">
+            <div class="feature-visual-lg">
+                <img src="assets/images/seating-ui.png" alt="Smart Seating Tool" class="app-screen shadow-lg">
+                <div class="floating-badge top-right">
+                    <i data-lucide="check-circle-2" class="text-green"></i> <span>Auto-Generated</span>
+                </div>
+            </div>
+            <div class="feature-content">
+                <div class="icon-box bg-blue-light text-blue mb-4"><i data-lucide="grid"></i></div>
+                <h2>Exam Logistics, Solved.</h2>
+                <p>Never manually plan a seating arrangement again. Define your rooms, select your students, and let
+                    CampusOS handle the geometry.</p>
+                <ul class="feature-check-list">
+                    <li><i data-lucide="check"></i> <strong>Drag & Drop</strong> adjustments</li>
+                    <li><i data-lucide="check"></i> <strong>Hover details</strong> for instant student ID</li>
+                    <li><i data-lucide="check"></i> <strong>Print-ready</strong> PDF exports</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Deep Dive: Finance (Zag) -->
+    <section class="section-padding bg-white">
+        <div class="container feature-row reversed">
+            <div class="feature-visual-lg">
+                <img src="assets/images/finance-ui.png" alt="Financial Analytics" class="app-screen shadow-lg">
+            </div>
+            <div class="feature-content">
+                <div class="icon-box bg-green-light text-green mb-4"><i data-lucide="pie-chart"></i></div>
+                <h2>Financial Clarity. Real-time.</h2>
+                <p>Track every rupee entering your institution. From tuition fees to transport charges, get a granular
+                    view of your financial health.</p>
+                <ul class="feature-check-list">
+                    <li><i data-lucide="check"></i> <strong>Automated Receipts</strong> via Email/WhatsApp</li>
+                    <li><i data-lucide="check"></i> <strong>Defaulter Lists</strong> with one-click reminders</li>
+                    <li><i data-lucide="check"></i> <strong>Daily Collection</strong> reports</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Dive: Timetable (Zig) -->
+    <section class="section-padding">
+        <div class="container feature-row">
+            <div class="feature-visual-lg">
+                <img src="assets/images/timetable-ui.png" alt="Smart Timetable" class="app-screen shadow-lg">
+            </div>
+            <div class="feature-content">
+                <div class="icon-box bg-purple-light text-purple mb-4"><i data-lucide="calendar-clock"></i></div>
+                <h2>Conflicts? History.</h2>
+                <p>Our intelligent scheduling engine builds conflict-free timetables in minutes, not days. Drag, drop,
+                    and deploy to the entire campus instantly.</p>
+                <ul class="feature-check-list">
+                    <li><i data-lucide="check"></i> <strong>Auto-Conflict Detection</strong> for teachers & rooms</li>
+                    <li><i data-lucide="check"></i> <strong>Substitute Management</strong> suggestions</li>
+                    <li><i data-lucide="check"></i> <strong>Mobile Sync</strong> for staff & students</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Dive: Attendance & Staff (Zag) -->
+    <section class="section-padding bg-white">
+        <div class="container feature-row reversed">
+            <div class="feature-visual-lg">
+                <div class="glass-card p-8 relative overflow-hidden"
+                    style="min-height: 400px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);">
+                    <div class="absolute inset-0 opacity-20"
+                        style="background-image: radial-gradient(#64748B 1px, transparent 1px); background-size: 20px 20px;">
+                    </div>
+                    <div style="text-align: center; color: white;">
+                        <div class="mb-4 flex justify-center"><i data-lucide="fingerprint" size="64"
+                                class="text-teal"></i></div>
+                        <h3 style="font-size: 2rem; margin-bottom: 1rem;">Biometric Ready</h3>
+                        <p style="color: #94A3B8; max-width: 300px;">Seamlessly integrates with your existing biometric
+                            hardware for automated staff and student attendance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-content">
+                <div class="icon-box bg-teal-light text-teal mb-4"><i data-lucide="users-2"></i></div>
+                <h2>Staff & Attendance Intelligence.</h2>
+                <p>Manage your entire workforce from a single pane of glass. Track leaves, calculate payroll input, and
+                    monitor attendance trends in real-time.</p>
+                <ul class="feature-check-list">
+                    <li><i data-lucide="check"></i> <strong>Leave Management</strong> workflows</li>
+                    <li><i data-lucide="check"></i> <strong>Payroll Export</strong> generation</li>
+                    <li><i data-lucide="check"></i> <strong>Smart Dashboards</strong> for Principal/Admin</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Deep Dive: Mobile (Zig) -->
+    <section class="section-padding">
+        <div class="container feature-row">
+            <div class="feature-visual-lg text-center">
+                <img src="assets/images/mobile-app.png" alt="Mobile Parent App" class="mobile-mockup">
+            </div>
+            <div class="feature-content">
+                <div class="icon-box bg-teal-light text-teal mb-4"><i data-lucide="smartphone"></i></div>
+                <h2>The Campus in Their Pocket.</h2>
+                <p>Give parents the transparency they demand. The CampusOS Parent Portal is a beautiful mobile
+                    experience that keeps them connected.</p>
+                <ul class="feature-check-list">
+                    <li><i data-lucide="check"></i> <strong>Instant Results</strong> notifications</li>
+                    <li><i data-lucide="check"></i> <strong>Attendance Alerts</strong> within seconds</li>
+                    <li><i data-lucide="check"></i> <strong>Direct Chat</strong> with class teachers</li>
+                </ul>
+                <div class="store-badges">
+                    <a href="#" class="btn btn-dark btn-sm"><i data-lucide="apple"></i> App Store</a>
+                    <a href="#" class="btn btn-dark btn-sm"><i data-lucide="play-circle"></i> Google Play</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- CTA -->
     <section class="container" style="padding-bottom: 50px;">
-        <div class="glass-card"
-            style="padding: 5rem 2rem; text-align: center; background: radial-gradient(circle at center, #0F766E 0%, #0F172A 100%); color: white;">
-            <h2 style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 1.5rem;">Ready to modernize your campus?</h2>
-            <p
-                style="color: rgba(255,255,255,0.8); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Join 500+ forward-thinking institutions using CampusOS to deliver world-class education.</p>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="http://localhost:5173/signup" class="btn" style="background: white; color: #0F172A;">Get
-                    Started Free</a>
-                <a href="#" class="btn"
-                    style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2);">Schedule
-                    Demo</a>
+        <div class="cta-banner">
+            <div class="cta-content">
+                <h2>Ready to modernize your campus?</h2>
+                <p>Join the fastest-growing education network. No credit card required for trial.</p>
+                <div class="cta-actions">
+                    <a href="http://localhost:5173/signup" class="btn btn-white text-primary">Get Started Free</a>
+                    <a href="#" class="btn btn-outline-white">Schedule Demo</a>
+                </div>
             </div>
         </div>
     </section>
@@ -205,47 +285,56 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#" class="logo" style="margin-bottom: 1.5rem; display: inline-flex;">
+                    <a href="#" class="logo">
                         <i data-lucide="graduation-cap"></i>
                         <span>CampusOS</span>
                     </a>
-                    <p style="font-size: 0.95rem;">Empowering the next generation of educational institutions with
-                        intelligent, automated, and beautiful software.</p>
+                    <p>The operating system for the next generation of schools. Built with ❤️ for education.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="linkedin"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                    </div>
                 </div>
 
-                <div class="footer-links">
-                    <h4>Platform</h4>
+                <div class="footer-col">
+                    <h4>Product</h4>
                     <ul>
                         <li><a href="#">Admissions</a></li>
                         <li><a href="#">Student Info</a></li>
                         <li><a href="#">Fees & Finance</a></li>
                         <li><a href="#">Examinations</a></li>
+                        <li><a href="#">Library</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
                     <h4>Company</h4>
                     <ul>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Security</a></li>
-                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Legal</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="copyright">
-                &copy; 2025 CampusOS Inc. All rights reserved.
+                <div>&copy; 2025 CampusOS Inc. All rights reserved.</div>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>

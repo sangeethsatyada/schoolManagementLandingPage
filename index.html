@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusOS | The Future of Education Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <i data-lucide="graduation-cap"></i>
+                <span>CampusOS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="http://localhost:5173/login" class="btn btn-outline"
+                        style="padding: 0.5rem 1.5rem; border-radius: 0.75rem;">Login</a></li>
+                <li><a href="http://localhost:5173/signup" class="btn btn-primary"
+                        style="padding: 0.5rem 1.5rem; border-radius: 0.75rem;">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">
+                    <i data-lucide="sparkles" size="14" style="margin-right: 6px;"></i>
+                    AI-Powered Excellence
+                </span>
+                <h1>Operate your campus on <span
+                        style="color: var(--primary); background: rgba(15, 118, 110, 0.1); padding: 0 0.5rem; border-radius: 1rem;">Autopilot.</span>
+                </h1>
+                <p style="margin: 1.5rem 0 2.5rem;">Abandon legacy spreadsheets. CampusOS is the all-in-one operating
+                    system designed for high-performance educational institutions. Secure, Automated, and Beautiful.</p>
+                <div
+                    style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; md:justify-content: start;">
+                    <a href="http://localhost:5173/signup" class="btn btn-primary">
+                        Start Free Trial <i data-lucide="arrow-right" size="18"></i>
+                    </a>
+                    <a href="#features" class="btn btn-outline">
+                        View Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <img src="assets/images/hero.png" alt="CampusOS Dashboard UI">
+
+                <!-- Floating Elements -->
+                <div class="floating-card fc-1 glass-card">
+                    <div
+                        style="width: 40px; height: 40px; background: #DEF7EC; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #03543F;">
+                        <i data-lucide="check" size="20"></i>
+                    </div>
+                    <div>
+                        <div style="font-weight: 800; font-size: 0.9rem;">Fee Collected</div>
+                        <div style="color: var(--slate); font-size: 0.8rem;">Just now via UPI</div>
+                    </div>
+                </div>
+
+                <div class="floating-card fc-2 glass-card">
+                    <div
+                        style="width: 40px; height: 40px; background: #E0E7FF; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #3730A3;">
+                        <i data-lucide="users" size="20"></i>
+                    </div>
+                    <div>
+                        <div style="font-weight: 800; font-size: 0.9rem;">98% Attendance</div>
+                        <div style="color: var(--slate); font-size: 0.8rem;">Class 10-A Today</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span
+                    style="color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;">Why
+                    CampusOS?</span>
+                <h2>Everything you need to run a world-class institution.</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <div class="icon-box">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Admissions & Roles</h3>
+                    <p style="margin-top: 1rem; font-size: 1rem;">Secure, invite-only onboarding for Staff and Students.
+                        Role-based access ensures data privacy at every level.</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="icon-box">
+                        <i data-lucide="layout-grid"></i>
+                    </div>
+                    <h3>Smart Seating</h3>
+                    <p style="margin-top: 1rem; font-size: 1rem;">Auto-generate exam seating arrangements in seconds.
+                        Drag-and-drop interface with instant hover details.</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="icon-box">
+                        <i data-lucide="banknote"></i>
+                    </div>
+                    <h3>Fee Management</h3>
+                    <p style="margin-top: 1rem; font-size: 1rem;">Track payments, generate receipts, and identify
+                        defaulters instantly. Integrated with WhatsApp for reminders.</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="icon-box">
+                        <i data-lucide="library"></i>
+                    </div>
+                    <h3>Digital Library</h3>
+                    <p style="margin-top: 1rem; font-size: 1rem;">Manage book inventory, track issues/returns, and
+                        minimize losses with a complete digital catalog.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Split: WhatsApp -->
+    <section class="feature-row container">
+        <div class="feature-visual">
+            <img src="assets/images/whatsapp.png" alt="WhatsApp Integration"
+                style="width: 100%; border-radius: 2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+        </div>
+        <div class="feature-content">
+            <span class="badge" style="background: #DEF7EC; color: #03543F; border-color: #DEF7EC;">WhatsApp
+                Integrated</span>
+            <h2>Communicate where parents actually listen.</h2>
+            <p style="margin-top: 1.5rem;">Stop sending emails that go to spam. CampusOS integrates directly with
+                WhatsApp to keep parents in the loop, automatically.</p>
+
+            <ul class="check-list">
+                <li><i data-lucide="check-circle-2"></i> Instant Attendance Alerts</li>
+                <li><i data-lucide="check-circle-2"></i> Exam Result Notifications</li>
+                <li><i data-lucide="check-circle-2"></i> Fee Payment Reminders</li>
+                <li><i data-lucide="check-circle-2"></i> General Announcements</li>
+            </ul>
+
+            <a href="#" class="btn btn-outline">Learn more about API</a>
+        </div>
+    </section>
+
+    <!-- Feature Split: Analytics -->
+    <section id="analytics" class="feature-row container reversed">
+        <div class="feature-visual">
+            <img src="assets/images/ai.png" alt="AI Analytics"
+                style="width: 100%; border-radius: 2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+        </div>
+        <div class="feature-content">
+            <span class="badge" style="background: #EEF2FF; color: #4F46E5; border-color: #EEF2FF;">Deep
+                Analytics</span>
+            <h2>Data-driven decisions, <br> simplified.</h2>
+            <p style="margin-top: 1.5rem;">Visualize your institution's health with real-time dashboards. Track student
+                performance trends, financial growth, and operational efficiency.</p>
+
+            <ul class="check-list">
+                <li><i data-lucide="bar-chart-3"></i> Student Performance Heatmaps</li>
+                <li><i data-lucide="pie-chart"></i> Financial Revenue Streams</li>
+                <li><i data-lucide="trending-up"></i> Enrollment Growth Tracking</li>
+            </ul>
+
+            <a href="#" class="btn btn-primary">View Dashboard Demo</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container" style="padding-bottom: 50px;">
+        <div class="glass-card"
+            style="padding: 5rem 2rem; text-align: center; background: radial-gradient(circle at center, #0F766E 0%, #0F172A 100%); color: white;">
+            <h2 style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 1.5rem;">Ready to modernize your campus?</h2>
+            <p
+                style="color: rgba(255,255,255,0.8); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Join 500+ forward-thinking institutions using CampusOS to deliver world-class education.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="http://localhost:5173/signup" class="btn" style="background: white; color: #0F172A;">Get
+                    Started Free</a>
+                <a href="#" class="btn"
+                    style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2);">Schedule
+                    Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo" style="margin-bottom: 1.5rem; display: inline-flex;">
+                        <i data-lucide="graduation-cap"></i>
+                        <span>CampusOS</span>
+                    </a>
+                    <p style="font-size: 0.95rem;">Empowering the next generation of educational institutions with
+                        intelligent, automated, and beautiful software.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Student Info</a></li>
+                        <li><a href="#">Fees & Finance</a></li>
+                        <li><a href="#">Examinations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2025 CampusOS Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
